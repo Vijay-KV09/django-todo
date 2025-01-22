@@ -18,7 +18,7 @@ pipeline{
         stage('running the container'){
             steps{
                 echo 'Running the container'
-                bat 'docker run -d -p 80:80 todoapp'
+                bat 'docker run -d -p 8000:8000 todoapp'
             }
         }
     }
