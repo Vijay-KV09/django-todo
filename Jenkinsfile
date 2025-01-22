@@ -9,13 +9,13 @@ pipeline{
                 branch: 'main'
             }
         }
-        stage('Building a Docker Imgae'){
+        stage('Building a Docker Image'){
             steps{
                 echo 'Image is Building'
                 bat 'docker build -t todoapp .'
             }
         }
-        stage('running the container'){
+        stage('Running the Container'){
             steps{
                 echo 'Running the container'
                 bat 'docker run -d -p 8000:8000 todoapp'
