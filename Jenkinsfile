@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage('Pulling the Github repo'){
             steps{
-                git url: '',
+                git url: 'https://github.com/Vijay-KV09/django-todo/',
                 branch: 'main'
             }
         }
